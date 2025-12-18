@@ -1,0 +1,17 @@
+chromadb
+langchain
+langchain_community
+langchain_ollama
+langchain-text-splitters
+ollama
+marker-pdf
+nltk
+numpy
+Pillow
+pymupdf4llm
+python-dotenv
+rank_bm25
+reportlab
+Requests
+streamlit
+tiktoken

@@ -1,0 +1,9 @@
+PDF_ChromaDB/
+tmp/
+*.log
+*.bin
+*.sqlite3
+.pyc
+__pycache__/
+__pycache__
+conda_env.txt
