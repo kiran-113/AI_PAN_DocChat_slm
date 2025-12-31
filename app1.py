@@ -502,6 +502,22 @@ Return JSON only:
         with st.chat_message("assistant"):
             st.markdown(resp)
         st.stop()
+    # -------------------------------
+# ✅ NON-PAN QUESTIONS → PURE RAG
+# -------------------------------
+    else:
+        with st.spinner("Thinking..."):
+            ans, _, _, _, _ = rag.generate_response(query, selected_model)
+            resp = remove_tags(ans)
+
+        st.session_state.messages.append(
+            {"role": "assistant", "content": resp}
+        )
+        with st.chat_message("assistant"):
+            st.markdown(resp)
+
+        st.stop()
+
 
     ans, _, _, _, _ = rag.generate_response(query, selected_model)
     resp = remove_tags(ans)
